@@ -1,0 +1,20 @@
+.vertical-scroll {
+  overflow-y: scroll;
+}
+
+.card:hover {
+  background-color: #333333 !important;
+  animation: scale-up 0.5s forwards;
+  fa-icon {
+    color: white;
+  }
+  .title-class {
+    color: white !important;
+  }
+}
+
+@keyframes scale-up {
+  to {
+    transform: scale(1.05);
+  }
+}

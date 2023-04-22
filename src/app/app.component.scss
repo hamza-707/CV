@@ -1,0 +1,72 @@
+.profile-picture {
+  // background-image: url("https://img.freepik.com/free-vector/network-mesh-wire-digital-technology-background_1017-27428.jpg?w=900&t=st=1681078128~exp=1681078728~hmac=e4e24197569487b50a1fcff66b8c278147b29d78c73fed42bc286d2be9a4ab06");
+  background-image: url("../assets/profile-pic.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #434343;
+  filter: grayscale(100%);
+}
+
+.profile-picture:hover {
+  animation: gray-to-color 0.5s ease-in-out forwards;
+}
+
+.bg-light {
+  background-color: #f6fbff;
+}
+
+.nav-box:hover {
+  color: white;
+  background-color: #333333;
+  animation: hover-opacity 0.4s forwards ease-in;
+}
+
+.nav-box {
+  color: #333333;
+  background-color: white;
+  padding: 12px 24px;
+}
+
+.selected {
+  color: white;
+  background-color: #333333;
+  padding: 12px 24px;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.social-icon:hover {
+  animation: hover-up 0.3s ease-in forwards;
+}
+
+@keyframes hover-opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hover-up {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes gray-to-color {
+  0% {
+    filter: grayscale(100%);
+    background-color: #434343;
+  }
+  100% {
+    filter: grayscale(0);
+    background-color: #f6fbff;
+  }
+}

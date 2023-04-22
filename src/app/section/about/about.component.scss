@@ -1,0 +1,165 @@
+.vertical-scroll {
+  overflow-y: scroll;
+}
+
+.letter-spacing-8 {
+  letter-spacing: 8px;
+}
+
+.skill-class-100 {
+  width: 0px;
+}
+
+.skill-animate-100 {
+  animation: animate-100-width ease-out 1s forwards;
+}
+
+.skill-class-95 {
+  width: 0px;
+}
+
+.skill-animate-95 {
+  animation: animate-95-width ease-out 1s forwards;
+}
+
+.skill-class-90 {
+  width: 0px;
+}
+
+.skill-animate-90 {
+  animation: animate-90-width ease-out 1s forwards;
+}
+
+.skill-class-85 {
+  width: 0px;
+}
+
+.skill-animate-85 {
+  animation: animate-85-width ease-out 1s forwards;
+}
+
+.skill-class-80 {
+  width: 0px;
+}
+
+.skill-animate-80 {
+  animation: animate-80-width ease-out 1s forwards;
+}
+
+.caret-right::before {
+  content: "\203A";
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.circle {
+  height: 40px;
+  width: 40px;
+  border-radius: 20px;
+  border: 1px solid #e9eef2;
+}
+
+.vertical-line {
+  width: 1px;
+  height: 120px;
+  background: #e9eef2;
+}
+
+.vertical-line-small {
+  width: 1px;
+  height: 83px;
+  background: #e9eef2;
+}
+
+.arrow_box {
+  position: relative;
+  border: 2px solid rgb(226, 223, 223);
+}
+.arrow_box:after,
+.arrow_box:before {
+  top: 100%;
+  left: 15%;
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.arrow_box:after {
+  border-top-color: #f6fbff;
+  border-width: 15px;
+  margin-left: -15px;
+}
+.arrow_box:before {
+  border-top-color: rgb(226, 223, 223);
+  border-width: 21px;
+  margin-left: -21px;
+}
+
+.client-pic {
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  filter: grayscale(100%);
+}
+
+.client-pic:hover {
+  animation: pic-hover 0.7s ease-out forwards;
+}
+
+@keyframes animate-100-width {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes animate-95-width {
+  from {
+    width: 0;
+  }
+  to {
+    width: 95%;
+  }
+}
+
+@keyframes animate-90-width {
+  from {
+    width: 0;
+  }
+  to {
+    width: 90%;
+  }
+}
+
+@keyframes animate-85-width {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+
+@keyframes animate-80-width {
+  from {
+    width: 0;
+  }
+  to {
+    width: 80%;
+  }
+}
+
+@keyframes pic-hover {
+  from {
+    filter: grayscale(100%);
+  }
+  to {
+    filter: grayscale(0);
+    transform: scale(1.05);
+  }
+}
