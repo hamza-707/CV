@@ -2,7 +2,29 @@
   overflow-y: scroll;
 }
 
-.main-div:hover {
+.main-div.wordle:hover {
+  animation: gray-to-color 0.3s ease-in forwards;
+  .text-animation {
+    animation: text-hover-up 0.3s ease-in forwards;
+  }
+}
+
+.main-div.snake:hover {
+  animation: gray-to-color 0.3s ease-in forwards;
+  .text-animation {
+    animation: text-hover-up 0.3s ease-in forwards;
+  }
+}
+
+.main-div.crm:hover {
+  animation: gray-to-color 0.3s ease-in forwards;
+  .text-animation {
+    animation: text-hover-up 0.3s ease-in forwards;
+  }
+}
+
+.main-div.landing-page:hover {
+  animation: gray-to-color 0.3s ease-in forwards;
   .text-animation {
     animation: text-hover-up 0.3s ease-in forwards;
   }
@@ -47,5 +69,14 @@
 @keyframes text-hover-up {
   to {
     bottom: 20px;
+  }
+}
+
+@keyframes gray-to-color {
+  0% {
+    filter: grayscale(100%);
+  }
+  100% {
+    filter: grayscale(0);
   }
 }
