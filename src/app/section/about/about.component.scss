@@ -53,21 +53,21 @@
 }
 
 .circle {
-  height: 40px;
-  width: 40px;
-  border-radius: 20px;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
   border: 1px solid #e9eef2;
 }
 
 .vertical-line {
   width: 1px;
-  height: 120px;
+  height: 80px;
   background: #e9eef2;
 }
 
 .vertical-line-small {
   width: 1px;
-  height: 83px;
+  height: 65px;
   background: #e9eef2;
 }
 
@@ -78,7 +78,7 @@
 .arrow_box:after,
 .arrow_box:before {
   top: 100%;
-  left: 15%;
+  left: 12.5%;
   border: solid transparent;
   content: "";
   height: 0;
@@ -99,8 +99,8 @@
 }
 
 .client-pic {
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   filter: grayscale(100%);
 }
